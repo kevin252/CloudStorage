@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Create Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-input placeholder="Email" 
+        [(ngModel)]="email" name="email" onfocus="true"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input placeholder="Password" 
+        [(ngModel)]="password" name="password" ></ion-input>
+    </ion-item>
+    <button ion-button (click)="createAccount(email,password)">Sign Up</button>
+</ion-content>
